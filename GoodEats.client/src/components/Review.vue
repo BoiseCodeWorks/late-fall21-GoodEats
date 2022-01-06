@@ -12,7 +12,7 @@
   </div>
 </template>
 
-  
+
 <script>
 import { Modal } from 'bootstrap'
 import { useRouter } from 'vue-router'
@@ -27,6 +27,7 @@ export default {
     const router = useRouter()
     return {
       goToProfile() {
+        // REVIEW close and navigate
         Modal.getOrCreateInstance(document.getElementById('restaurant-modal')).hide()
         router.push({ name: 'Profile', params: { id: props.review.creatorId } })
       }
