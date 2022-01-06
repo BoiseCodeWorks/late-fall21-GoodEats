@@ -53,5 +53,5 @@ SELECT
   rs.*,
   AVG(rv.rating) AS AverageRating
 FROM restaurants rs
-JOIN reviews rv ON rv.restaurantId = rs.id
-WHERE rs.id = 1;
+LEFT JOIN reviews rv ON rv.restaurantId = rs.id
+GROUP BY rs.id;

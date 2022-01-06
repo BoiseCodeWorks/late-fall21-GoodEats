@@ -1,8 +1,6 @@
 <template>
-  <nav
-    class="navbar navbar-expand-lg navbar-dark bg-transparent px-3 text-shadow"
-  >
-    <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-3">
+    <router-link class="navbar-brand d-flex text-shadow" :to="{ name: 'Home' }">
       <div class="d-flex flex-column align-items-center">
         <h3>GoodEats</h3>
       </div>

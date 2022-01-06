@@ -32,7 +32,13 @@ namespace GoodEats.Repositories
 
     public List<Restaurant> GetAll()
     {
-      string sql = "SELECT * FROM restaurants";
+      string sql = @"
+      SELECT 
+        rs.*,
+        AVG(rv.rating) AS AverageRating
+      FROM restaurants rs
+      LEFT JOIN reviews rv ON rv.restaurantId = rs.id
+      GROUP BY rs.id;";
       return _db.Query<Restaurant>(sql).ToList();
     }
 
