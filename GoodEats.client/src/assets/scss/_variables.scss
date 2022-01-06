@@ -1,0 +1,37 @@
+$body-bg: hsl(0, 0%, 90%);
+$primary: hsl(33, 41%, 59%);
+$secondary: hsl(183, 41%, 59%);
+$success: #6BC19A;
+$info: #6F6BC1;
+$warning: #fbcf33;
+$danger: #C16B92;
+$light: #e9ecef;
+$dark: #111927;
+$grey: #cbcbcb;
+
+$font-sans-serif: Open Sans;
+$font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$gradient: linear-gradient(180deg, hsla(0, 0%, 100%, 0.15), hsla(0, 0%, 100%, 0));
+
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "danger": $danger,
+  "success": $success,
+  "warning": $warning,
+  "info": $info,
+  "dark": $dark,
+  "grey": $grey,
+);
+
+$color-ranges: (
+  0: 0,
+  5: 5,
+  10: 10,
+  15: 15,
+  20: 20,
+  25: 25,
+  30: 30,
+  35: 35,
+  40: 40,
+);
